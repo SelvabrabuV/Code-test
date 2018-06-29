@@ -8,15 +8,20 @@ public class Widget {
     private String color;
     private Date productionDate;
     
-
+static int count =0;
     public Widget(int serialNumber, String color, Date productionDate) {
-    	
+    	if(count<10) {
         this.serialNumber = serialNumber;
         this.color = color;
         this.productionDate = productionDate;
+    	}
+    	else
+    		System.out.println("You can add only 10 widgets");
     	
-    		
+    	count++;	
     }
+    
+
 
     public int getSerialNumber() {
         return serialNumber;

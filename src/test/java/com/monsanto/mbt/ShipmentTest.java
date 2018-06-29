@@ -8,13 +8,14 @@ import static org.junit.Assert.assertTrue;
 import java.util.*;
 
 public class ShipmentTest {
-	Shipment cg = new Shipment();
+	
+	static Shipment cg = new Shipment(WidgetUtils.getSampleWidgets());
 	
 	
 	@Test
 	public void testShipment_Sorted_By_Color() {
 		// Implement your solution to get list of shipments
-		
+				
 cg.sortcolor();
 //Assert.assertArrayEquals(expecteds, actuals);
 	}
@@ -22,8 +23,8 @@ cg.sortcolor();
 	@Test
 	public void testShipment_Sorted_By_Date() {
 		// Implement your solution to get list of shipments
-	
-cg.sortproddate();
+		cg.sortproddate();
+
 	}
 
 	
